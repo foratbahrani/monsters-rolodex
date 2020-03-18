@@ -11,7 +11,7 @@ export default class App extends Component {
 	}
 
 	componentDidMount() {
-		fetch('http://jsonplaceholder.typicode.com/users')
+		fetch('https://jsonplaceholder.typicode.com/users')
 			.then(res => res.json())
 			.then(data => this.setState({ monsters: data }));
 	}
